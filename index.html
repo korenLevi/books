@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Books Store</title>
+</head>
+
+<body onload="init()">
+    <h1>Styilng HTML Tables</h1>
+    <a href="#" onclick="showBookMenu()">Create new book</a> 
+
+    <table class="table-container">
+        <button class="clearDetails" onclick="clearDetails()">Clear</button>
+    </table>
+
+    <section class="add-book">
+        <input class="new-bookTitle" type="text" placeholder="Book Title" />
+        <input class="new-bookPrice" type="text" placeholder="Price" />
+        <input type="submit" onclick="onAddBook()" value="Add book" />
+    </section>
+
+    <section class="update-book">
+        <input class="update-bookPrice" type="text" placeholder="Price" />
+        <input type="submit" onclick="clickUpdate()" value="Update book" />
+    </section>
+    
+    <div class="read-text">
+        <div class="rate">
+            <button class="minus" onclick="subRate()">-</button>
+            <span class="numberPlace">0</span>
+            <button class="plus" onclick="addRate()">+</button>
+        </div>
+        <br >
+        <div class="details"></div>
+        
+        
+
+    </div>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/books-service.js"></script>
+    <script src="js/books-controller.js"></script>
+</body>
+
+</html>
