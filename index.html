@@ -10,12 +10,22 @@
 </head>
 
 <body onload="init()">
-    <h1>Styilng HTML Tables</h1>
-    <a href="#" onclick="showBookMenu()">Create new book</a>
-    <h2>new</h2>
-    <table class="table-container">
+    <header>
+        <h1>Styilng HTML Tables</h1>
+        <a href="#" onclick="showBookMenu()">Create new book</a>
         <button class="clearDetails" onclick="clearDetails()">Clear</button>
+        <select class="langFilter" onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+            <option value="es">Spanish</option>
+        </select>
+    </header>
+  
+
+    <table class="table-container">
     </table>
+
+   
 
     <section class="add-book">
         <input class="new-bookTitle" type="text" placeholder="Book Title" />

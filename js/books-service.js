@@ -125,9 +125,6 @@ function showUpdateMenu(bookId) {
     } else {
         elBook.style.display = 'none'
     }
-
-
-
 }
 
 function updateBook(bookId) {
@@ -148,7 +145,6 @@ function clickUpdate() {
     isUpdateClick = !isUpdateClick;
     updateBook(gId);
     renderBooks();
-
 }
 
 

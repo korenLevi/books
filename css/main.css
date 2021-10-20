@@ -25,16 +25,39 @@ a {
     padding: 10px;
     /* Change your font family */
 }
+
+.langFilter {
+    /* margin-left: 250px; */
+    /* display: flex;
+    justify-content: flex; */
+    flex-grow: 2;
+}
+
 button {
-    border:2px solid #3498db;
+    border: 2px solid #3498db;
     border-radius: 30px;
     background-color: #ffffff;
 }
+
+@media screen and (max-width:426px) {
+    .table-container {
+        height: 400;
+        width: 200px;
+        /* top: 200px; */
+        font-size: 1em;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
 .table-container {
     /* border-collapse: collapse; */
     /* position:fixed; */
     /* margin: 25px 0; */
     margin: auto;
+    /* height: 500px;
+    width: 100px; */
     font-size: 1em;
     min-width: 400px;
     border-radius: 20px 20px 0 0;
@@ -137,8 +160,9 @@ button {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: flex;
     /* float: inline-start; */
-    display: flex;
-    border: 10px  solid #2ecc71;
+    /* display: none; */
+    display: contents;
+    border: 10px solid #2ecc71;
     height: 100px;
     width: 600px;
     border-radius: 100px;
